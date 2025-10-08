@@ -1,0 +1,5522 @@
+[
+  {
+    "timestamp": "2025-10-08T09:45:17.877397",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:17.986518",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:18.085988",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:18.217788",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:18.363994",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:18.487989",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:18.744276",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:18.933611",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:18.985338",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.006013",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.023122",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.047003",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.070657",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.097176",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.132062",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.167766",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.226144",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.246078",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.265437",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.292352",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.322948",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.348897",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.388409",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.427936",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.792291",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:19.932286",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:20.077621",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:20.258516",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:20.462373",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:20.645751",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:20.946635",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:21.214393",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:21.415697",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:21.483748",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:21.556795",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:21.732419",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:21.829785",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:21.921700",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:22.058332",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:22.197292",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:22.499096",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:22.616565",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:22.731749",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:22.898406",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.047421",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.185989",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.410023",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.624324",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.736779",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.780250",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.816840",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.872472",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.922649",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:23.975009",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.047445",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.124803",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.283678",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.349572",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.411103",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.494539",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.578702",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.668431",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.800966",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:24.936989",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:25.199187",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:25.291336",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:25.382103",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:25.506868",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:25.639544",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:25.750760",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:25.930598",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.169700",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.332188",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.386491",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.446533",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.530518",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.611624",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.681479",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.794093",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:26.907919",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:27.175183",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:27.282618",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:27.384912",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:27.519839",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:27.651893",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:27.775465",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:27.971645",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:28.159211",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:28.374863",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:28.468100",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:28.561715",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:28.675473",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:28.793366",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:28.909711",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.077166",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.238340",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.273629",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.285350",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.300111",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.316809",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.333953",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.349228",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.373138",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.396593",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.467140",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.491999",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.524671",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.558253",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.591931",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.623350",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.676417",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:29.724858",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:30.057430",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:30.183122",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:30.322019",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:30.490124",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:30.656974",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:30.814141",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.043980",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.278802",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.314389",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.324482",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.334288",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.348094",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.361677",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.374449",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.394189",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.417224",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.581031",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.649403",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.715540",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.793989",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.883926",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:31.963991",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.077271",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.197321",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.340333",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.397095",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.448282",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.513028",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.580520",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.641395",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.740705",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.838802",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.937641",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:32.971812",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.005474",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.057498",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.104408",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.153288",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.219942",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.293800",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.585563",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.708622",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.828281",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:33.976092",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:34.111177",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:34.232560",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:34.420693",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:34.621741",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:34.800718",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:34.872844",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:34.941937",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.035274",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.129229",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.218265",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.343140",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.475841",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.584571",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.627532",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.665473",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.722800",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.775891",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.829290",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.904957",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:35.983575",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:36.405078",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:36.568715",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:36.805483",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:37.014180",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:37.237267",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:37.424644",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:37.739378",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.044597",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.153380",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.189351",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.230778",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.279109",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.334305",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.380677",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.459427",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.533511",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.706616",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.773672",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.839951",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:38.920642",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.008165",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.094138",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.220995",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.348673",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.457733",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.495330",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.537081",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.588213",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.643612",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.691983",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.772846",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:39.846957",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:40.098104",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:40.194254",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:40.286970",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:40.415291",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:40.581434",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:40.708280",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:40.891035",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.071160",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.260656",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.333493",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.405745",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.503608",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.594761",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.686160",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.823661",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:41.962794",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.043623",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.071174",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.101964",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.139649",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.176642",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.215949",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.268863",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.321543",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.465693",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.522643",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.569965",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.642347",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.715142",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.778636",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.883747",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:42.989626",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:43.261018",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:43.360600",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:43.468524",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:43.664533",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:43.800203",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:43.927412",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.125404",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.318555",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.371490",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.390466",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.408091",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.436433",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.460887",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.484405",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.524227",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.565686",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.621757",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.642501",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.666443",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.694231",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.721684",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.748152",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.791412",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:44.831470",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:45.189591",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:45.339582",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:45.473085",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:45.664039",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:45.844012",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:46.023132",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:46.277998",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:46.536985",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:46.795008",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:46.864051",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:46.935449",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:47.034086",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:47.131490",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:47.223510",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:47.366100",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:47.508133",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:47.810631",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:47.926270",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:48.049973",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:48.207133",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:48.368446",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:48.513779",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:48.730250",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:48.956806",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.068849",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.106444",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.148231",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.198627",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.255828",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.303792",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.382888",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.456156",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.617325",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.680130",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.734719",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.821414",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.908182",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:49.986025",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:50.105384",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:50.217471",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:50.477332",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:50.576332",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:50.668304",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:50.789624",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:50.910790",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.022100",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.210400",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.391944",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.620377",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.684100",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.744985",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.820672",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.902568",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:51.981010",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:52.097570",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:52.204687",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:52.469310",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:52.573516",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:52.671964",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:52.859718",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:52.994215",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:53.117915",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:53.302753",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:53.496159",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:53.713658",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:53.797061",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:53.876976",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:53.985051",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.092368",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.195549",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.351688",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.506218",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--2_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.541197",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.552017",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.563118",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.578202",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.597434",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.612067",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.634484",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.656681",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--5_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.722526",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.745389",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.767513",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.802936",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.833804",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.862906",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.907406",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:54.958177",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:55.258016",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:55.370931",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:55.483061",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:55.642782",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:55.794262",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:55.933923",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.162733",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.380124",
+    "input_file": "data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber5_MID--AUDIO_18_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.411566",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.421423",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.434177",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.447141",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.460161",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.472475",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.493173",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.513603",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.671047",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.725165",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.783621",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.864720",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:56.946776",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.016808",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.132337",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.247218",
+    "input_file": "data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber4_MID--AUDIO_11_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.376045",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.425671",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.468476",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.532775",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.598773",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.654156",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.745791",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.831844",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.923501",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.960535",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:57.992661",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.043182",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.087529",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.129412",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.198490",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.263690",
+    "input_file": "data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber2_MID--AUDIO_09_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.525927",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.627144",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.725332",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:58.874562",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.009174",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.129376",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.319280",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.508244",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--5_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.691243",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.761740",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.831418",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:45:59.926809",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.022443",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.103613",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.237232",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.375407",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--4_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.490610",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.535428",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.572616",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.628308",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.679191",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.732240",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.805214",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:00.884264",
+    "input_file": "data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber6_MID--AUDIO_20_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:01.306860",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:01.466021",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:01.634435",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:01.848519",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:02.072403",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:02.254431",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:02.552826",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:02.861116",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_02_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:02.962726",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:02.998434",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.039059",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.087673",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.140821",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.186458",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.262417",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.336607",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_07_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.506685",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.573505",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.631620",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.717940",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.805195",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:03.888016",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.013373",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.139949",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_03_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.247463",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.284397",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.326062",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.376483",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.431928",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.481807",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.559545",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.632656",
+    "input_file": "data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Chamber3_MID--AUDIO_10_R3_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.885412",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:04.980681",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:05.073510",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:05.198230",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:05.322078",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:05.450382",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:05.627182",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:05.803233",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_06_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:05.995251",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.069884",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.133839",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.230100",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.329842",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.420196",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.560548",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.697903",
+    "input_file": "data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital5-7_MID--AUDIO_05_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.776951",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.804261",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.835807",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.872011",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.908676",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:06.948253",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.000009",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.052063",
+    "input_file": "data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital1-3_MID--AUDIO_01_R1_2018_wav--1_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.192145",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_linear_shift_50ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.241670",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_linear_shift_-30ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": -30
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.294940",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_linear_shift_100ticks.midi",
+    "corruption_type": "linear_shift",
+    "parameters": {
+      "shift_ticks": 100
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.367975",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_progressive_shift_0to80ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 0,
+      "end_shift": 80
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.434255",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_progressive_shift_50to-50ticks.midi",
+    "corruption_type": "progressive_shift",
+    "parameters": {
+      "start_shift": 50,
+      "end_shift": -50
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.503152",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_section_shifts_0-1000_50_1000-3000_-20_3000-999999_30.midi",
+    "corruption_type": "section_shifts",
+    "parameters": {
+      "shifts": [
+        [
+          0,
+          1000,
+          50
+        ],
+        [
+          1000,
+          3000,
+          -20
+        ],
+        [
+          3000,
+          999999,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.607422",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_jitter_25ticks_seed42.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 25,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2025-10-08T09:46:07.705605",
+    "input_file": "data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3.midi",
+    "output_file": "corrupted_data/MIDI-Unprocessed_Recital4_MID--AUDIO_04_R1_2018_wav--3_jitter_50ticks_seed123.midi",
+    "corruption_type": "random_jitter",
+    "parameters": {
+      "max_jitter": 50,
+      "seed": 123
+    }
+  }
+]

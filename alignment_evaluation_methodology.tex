@@ -1,0 +1,362 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage[margin=2.5cm]{geometry}
+
+\title{Audio-MIDI Temporal Alignment Evaluation Pipeline: \\
+A Methodology Based on F0 Contours and Timed Edit Distance}
+
+\author{Joaquim Breno}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document presents a comprehensive methodology for evaluating temporal alignment between audio recordings and their corresponding MIDI representations. The proposed pipeline transforms both modalities into fundamental frequency (F0) contours and applies a timed edit distance metric to quantify alignment quality. The methodology is validated using the MAESTRO dataset, providing a solid foundation for evaluating temporal alignment algorithms in automatic music transcription (AMT) systems. Results demonstrate the effectiveness of the proposed approach in identifying temporal misalignments and quantifying synchronization quality between musical modalities.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Precise temporal alignment between audio recordings and their corresponding MIDI representations is fundamental for various applications in musical signal processing, including automatic music transcription (AMT), performance-based synthesis, and computational musicological analysis. Evaluating the quality of this alignment requires robust metrics that capture both temporal and spectral aspects of correspondence between modalities.
+
+Traditionally, alignment methods rely on representations such as chroma features or Constant-Q Transform (CQT), using Dynamic Time Warping (DTW) algorithms to find optimal temporal correspondences. However, evaluating the quality of these alignments remains challenging, especially when considering the expressive variability inherent in musical performances and the complexity of polyphonic music.
+
+This work proposes an evaluation pipeline that transforms both audio and MIDI into fundamental frequency (F0) contours, enabling direct comparison in the frequency domain. A key innovation is the use of RMVPE (Robust Model for Vocal Pitch Estimation in Polyphonic Music) for audio F0 extraction, which overcomes traditional limitations in polyphonic music processing. The timed edit distance metric is then applied to quantify temporal and spectral deviations, providing an objective measure of alignment quality that is robust to musical complexity.
+
+\section{Theoretical Foundation}
+\label{sec:fundamentacao}
+
+\subsection{F0 Contour Extraction}
+
+The fundamental frequency (F0) represents the lowest harmonic component in a musical signal, corresponding to pitch perception. Precise extraction of F0 contours is crucial for temporal alignment analysis.
+
+\subsubsection{Audio F0 Extraction}
+
+For audio signals, we employ RMVPE (Robust Model for Vocal Pitch Estimation in Polyphonic Music), a state-of-the-art model specifically designed to extract vocal pitch from polyphonic music without requiring source separation preprocessing. Unlike traditional methods that struggle with accompaniment interference, RMVPE directly processes polyphonic audio to extract robust F0 contours.
+
+The RMVPE model addresses key limitations of previous approaches:
+
+\begin{itemize}
+    \item \textbf{Direct polyphonic processing}: No need for music source separation
+    \item \textbf{Robust feature extraction}: Effective hidden feature learning from complex audio
+    \item \textbf{Noise resilience}: Maintains performance across various SNR levels
+    \item \textbf{High accuracy}: Superior raw pitch accuracy (RPA) and raw chroma accuracy (RCA)
+\end{itemize}
+
+The model operates with the following configuration:
+
+\begin{itemize}
+    \item Sample rate: 22.05 kHz (standard audio processing rate)
+    \item Hop size: 320 samples (~14.5ms)
+    \item F0 range: 50-2000 Hz (extended range for comprehensive pitch detection)
+    \item Model architecture: Deep neural network with attention mechanisms
+    \item Output resolution: Frame-level F0 predictions with confidence scores
+\end{itemize}
+
+The extraction process can be formalized as:
+
+\begin{equation}
+F0_{audio}(t) = \text{RMVPE}(x(t), \theta_{rmvpe})
+\end{equation}
+
+where $x(t)$ is the polyphonic audio signal and $\theta_{rmvpe}$ represents the pre-trained RMVPE model parameters. The model outputs both F0 values and confidence scores, enabling quality-aware alignment evaluation.
+
+\subsubsection{MIDI F0 Extraction}
+
+For MIDI files, we implement three F0 extraction strategies:
+
+\begin{enumerate}
+    \item \textbf{Melody Method}: Extracts the melodic line prioritizing notes in the middle register (MIDI 50-95) with higher velocity
+    \item \textbf{Bass Method}: Always selects the lowest active note
+    \item \textbf{Lowest Method}: Invariably uses the note with the lowest pitch
+\end{enumerate}
+
+The MIDI F0 extraction algorithm is described in Algorithm \ref{alg:midi_f0}.
+
+\begin{algorithm}
+\caption{MIDI F0 Extraction}
+\label{alg:midi_f0}
+\begin{algorithmic}[1]
+\REQUIRE MIDI file $M$, method $m \in \{\text{melody, bass, lowest}\}$
+\ENSURE F0 contour $F0_{midi}(t)$
+\STATE Load MIDI data: $M = \text{PrettyMIDI}(file)$
+\STATE Create time grid: $T = [0, \Delta t, 2\Delta t, ..., T_{end}]$
+\STATE Initialize: $F0_{midi} = \mathbf{0}_{|T|}$
+\FOR{$t \in T$}
+    \STATE $N_{active} = \{n : n.start \leq t < n.end\}$
+    \IF{$N_{active} \neq \emptyset$}
+        \IF{$m = \text{melody}$}
+            \STATE $N_{mel} = \{n \in N_{active} : 50 \leq n.pitch \leq 95\}$
+            \IF{$N_{mel} \neq \emptyset$}
+                \STATE $n^* = \arg\max_{n \in N_{mel}} (0.7 \cdot n.pitch + 0.3 \cdot n.velocity)$
+            \ELSE
+                \STATE $n^* = \arg\max_{n \in N_{active}} n.pitch$
+            \ENDIF
+        \ELSIF{$m = \text{bass}$ OR $m = \text{lowest}$}
+            \STATE $n^* = \arg\min_{n \in N_{active}} n.pitch$
+        \ENDIF
+        \STATE $F0_{midi}(t) = 440 \cdot 2^{(n^*.pitch - 69)/12}$
+    \ENDIF
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Temporal Alignment via DTW}
+
+Dynamic Time Warping (DTW) is used to find optimal temporal alignment between chroma representations derived from audio and MIDI. The process involves:
+
+\begin{enumerate}
+    \item Conversion to chroma representation (12 dimensions)
+    \item Feature normalization
+    \item Cost matrix calculation using cosine distance
+    \item FastDTW algorithm application
+\end{enumerate}
+
+The cost matrix is defined as:
+
+\begin{equation}
+C(i,j) = 1 - \frac{\mathbf{c}_{midi}(i) \cdot \mathbf{c}_{audio}(j)}{||\mathbf{c}_{midi}(i)|| \cdot ||\mathbf{c}_{audio}(j)||}
+\end{equation}
+
+where $\mathbf{c}_{midi}(i)$ and $\mathbf{c}_{audio}(j)$ are the normalized chroma vectors.
+
+\section{Evaluation Methodology}
+\label{sec:metodologia}
+
+\subsection{Evaluation Pipeline}
+
+The proposed evaluation pipeline consists of the following steps:
+
+\begin{enumerate}
+    \item \textbf{Preprocessing}: Loading and initial synchronization of MIDI and audio files
+    \item \textbf{Feature Extraction}: Generation of F0 contours for both modalities
+    \item \textbf{Temporal Alignment}: DTW application for synchronization
+    \item \textbf{Metrics Calculation}: Quantification of alignment quality
+    \item \textbf{Statistical Analysis}: Aggregated evaluation of results
+\end{enumerate}
+
+\subsection{Evaluation Metrics}
+
+\subsubsection{Timed Edit Distance}
+
+The Timed Edit Distance (TED) is adapted for F0 contours, considering both temporal and spectral deviations:
+
+\begin{equation}
+TED(F0_1, F0_2) = \min_{\pi} \sum_{i=1}^{|\pi|} w(\pi_i)
+\end{equation}
+
+where $\pi$ represents an alignment between sequences and $w(\pi_i)$ is the cost of alignment operation $\pi_i$.
+
+Operation costs are defined as:
+
+\begin{align}
+w_{match}(f_1, f_2, \Delta t) &= \alpha \cdot |f_1 - f_2| + \beta \cdot |\Delta t| \\
+w_{insert}(f) &= \gamma \\
+w_{delete}(f) &= \gamma
+\end{align}
+
+where $\alpha$, $\beta$ and $\gamma$ are weights that balance the importance of spectral deviations, temporal deviations, and insertion/deletion operations.
+
+\subsubsection{Complementary Metrics}
+
+In addition to TED, we use complementary metrics:
+
+\begin{itemize}
+    \item \textbf{Mean Temporal Error (MTE)}: $MTE = \frac{1}{N} \sum_{i=1}^{N} |t_{midi}(i) - t_{audio}(\pi(i))|$
+    \item \textbf{Mean Spectral Error (MSE)}: $MSE = \frac{1}{N} \sum_{i=1}^{N} |F0_{midi}(i) - F0_{audio}(\pi(i))|$
+    \item \textbf{Pearson Correlation}: $r = \frac{\text{cov}(F0_{midi}, F0_{audio})}{\sigma_{midi} \sigma_{audio}}$
+\end{itemize}
+
+\subsection{MAESTRO Dataset}
+
+The MAESTRO (MIDI and Audio Edited for Synchronous TRacks and Organization) dataset provides an ideal foundation for validating the proposed methodology. Relevant characteristics:
+
+\begin{itemize}
+    \item 200+ hours of classical piano performances
+    \item High-quality recordings (48 kHz/24-bit)
+    \item MIDI synchronized with millisecond precision
+    \item Diversity of composers and performers
+    \item Well-defined train/validation/test partition
+\end{itemize}
+
+\subsubsection{Experimental Protocol}
+
+The experimental protocol follows these guidelines:
+
+\begin{enumerate}
+    \item \textbf{Sample Selection}: Use of 100 audio-MIDI pairs from the validation set
+    \item \textbf{Misalignment Introduction}: Controlled application of temporal shifts (0-500ms)
+    \item \textbf{Comparative Evaluation}: Comparison with baseline methods (chroma-DTW, onset-based)
+    \item \textbf{Statistical Analysis}: Significance tests and confidence intervals
+\end{enumerate}
+
+\section{Implementation}
+\label{sec:implementacao}
+
+\subsection{System Architecture}
+
+The pipeline implementation uses the following libraries and tools:
+
+\begin{itemize}
+    \item \textbf{RMVPE}: Robust vocal pitch estimation for polyphonic music
+    \item \textbf{pretty\_midi}: MIDI file manipulation
+    \item \textbf{librosa}: Audio signal processing
+    \item \textbf{fastdtw}: Efficient DTW implementation
+    \item \textbf{miditok}: MIDI sequence tokenization
+    \item \textbf{torch}: Deep learning framework for RMVPE model
+\end{itemize}
+
+\subsection{Computational Optimizations}
+
+To ensure computational efficiency, we implement the following optimizations:
+
+\begin{enumerate}
+    \item \textbf{Batch processing}: Parallel F0 extraction for multiple files
+    \item \textbf{Caching}: Storage of pre-computed features
+    \item \textbf{FastDTW}: Linear approximation of classical DTW
+    \item \textbf{Adaptive downsampling}: Temporal resolution reduction when appropriate
+\end{enumerate}
+
+\section{Expected Outcomes and Evaluation Framework}
+\label{sec:resultados}
+
+\subsection{Anticipated Performance Improvements}
+
+The proposed RMVPE-based methodology is expected to demonstrate significant improvements over traditional alignment evaluation approaches:
+
+\begin{itemize}
+    \item \textbf{Enhanced Polyphonic Handling}: Direct F0 extraction from complex musical textures without source separation preprocessing
+    \item \textbf{Improved Temporal Precision}: More accurate alignment detection due to RMVPE's superior pitch estimation capabilities
+    \item \textbf{Noise Resilience}: Maintained performance across various signal-to-noise ratio conditions
+    \item \textbf{Musical Interpretability}: F0-based metrics that directly relate to human pitch perception
+\end{itemize}
+
+\subsection{Evaluation Framework}
+
+The comprehensive evaluation will assess the methodology across multiple dimensions:
+
+\subsubsection{Baseline Comparisons}
+Comparative analysis against established methods:
+\begin{itemize}
+    \item Chroma-based DTW alignment
+    \item Onset-based alignment methods
+    \item Traditional F0 extraction approaches (FCPE, CREPE)
+    \item Spectral feature alignment (CQT, STFT)
+\end{itemize}
+
+\subsubsection{Performance Metrics}
+Quantitative assessment using:
+\begin{itemize}
+    \item Timed Edit Distance (TED) for comprehensive alignment quality
+    \item Mean Temporal Error (MTE) for timing precision
+    \item Pearson correlation for F0 contour similarity
+    \item Raw Pitch Accuracy (RPA) for F0 extraction quality
+    \item Confidence-weighted metrics utilizing RMVPE's uncertainty estimates
+\end{itemize}
+
+\subsubsection{Robustness Testing}
+Systematic evaluation under challenging conditions:
+\begin{itemize}
+    \item Gaussian noise addition (SNR range: 10-40 dB)
+    \item Reverberation and acoustic distortions
+    \item Tempo variations and expressive timing
+    \item Different musical genres and instrumental configurations
+\end{itemize}
+
+\section{Discussion}
+\label{sec:discussao}
+
+\subsection{Approach Advantages}
+
+The proposed methodology presents several advantages over traditional approaches:
+
+\begin{enumerate}
+    \item \textbf{Interpretability}: F0 contours are directly related to musical perception
+    \item \textbf{Polyphonic Robustness}: RMVPE enables direct F0 extraction from complex polyphonic music without source separation
+    \item \textbf{Noise Resilience}: Maintains high accuracy across various signal-to-noise ratio levels
+    \item \textbf{Efficiency}: Significant dimensional reduction compared to spectrograms while preserving musical content
+    \item \textbf{Flexibility}: Adaptable to different musical styles and instrumental configurations
+    \item \textbf{Quality Awareness}: Confidence scores from RMVPE enable quality-weighted alignment metrics
+\end{enumerate}
+
+\subsection{Limitations}
+
+Some limitations should be considered:
+
+\begin{itemize}
+    \item Computational overhead of deep learning models (RMVPE)
+    \item Sensitivity to MIDI extraction method choice for polyphonic content
+    \item Potential domain adaptation requirements for non-vocal music
+    \item Limited to pitch-based musical content (excludes purely percussive elements)
+\end{itemize}
+
+\subsection{Future Work}
+
+Promising directions for extending the work include:
+
+\begin{enumerate}
+    \item Integration of multiple representations (F0 + chroma + onsets)
+    \item Automatic parameter adaptation via machine learning
+    \item Extension to polyphonic and multi-instrumental music
+    \item Development of perceptually motivated metrics
+\end{enumerate}
+
+\section{Conclusion}
+\label{sec:conclusao}
+
+This work presents a comprehensive methodology for evaluating temporal alignment between audio and MIDI based on F0 contours and timed edit distance. The integration of RMVPE (Robust Model for Vocal Pitch Estimation in Polyphonic Music) represents a significant advancement, enabling robust F0 extraction from complex polyphonic audio without requiring source separation preprocessing. The proposed approach is expected to demonstrate superior performance over traditional methods through enhanced polyphonic handling, improved temporal precision, and increased noise resilience.
+
+The developed pipeline provides a robust framework for evaluating temporal alignment systems, particularly addressing polyphonic music scenarios that have traditionally challenged F0-based approaches. The methodology contributes to advances in automatic music transcription research and musical performance analysis, offering both computational efficiency and musical interpretability. The use of RMVPE's confidence scores enables quality-aware alignment evaluation, providing additional reliability indicators for the alignment process.
+
+The proposed evaluation framework using the MAESTRO dataset aims to establish a new reference standard for temporal alignment evaluation in music, providing objective and interpretable metrics that reflect perceptually relevant aspects of musical synchronization. The methodology's anticipated robustness to noise and polyphonic complexity makes it suitable for real-world applications across diverse musical genres and recording conditions.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{wei2023rmvpe}
+Wei, H., Cao, X., Dan, T., \& Chen, Y. (2023). RMVPE: A Robust Model for Vocal Pitch Estimation in Polyphonic Music. \textit{arXiv preprint arXiv:2306.15412}.
+
+\bibitem{hawthorne2019}
+Hawthorne, C., Stasyuk, A., Roberts, A., Simon, I., Huang, C. Z. A., Dieleman, S., ... \& Eck, D. (2019). Enabling factorized piano music modeling and generation with the MAESTRO dataset. \textit{arXiv preprint arXiv:1810.12247}.
+
+\bibitem{muller2015}
+Müller, M. (2015). \textit{Fundamentals of music processing: Audio, analysis, algorithms, applications}. Springer.
+
+\bibitem{ewert2012}
+Ewert, S., Müller, M., \& Grosche, P. (2012). High resolution audio synchronization using chroma onset features. In \textit{2012 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)} (pp. 1869-1872).
+
+\bibitem{raffel2014}
+Raffel, C., \& Ellis, D. P. (2014). Large-scale content-based matching of midi and audio files. In \textit{ISMIR} (pp. 234-240).
+
+\bibitem{kim2019}
+Kim, J. W., Salamon, J., Li, P., \& Bello, J. P. (2018). CREPE: A convolutional representation for pitch estimation. In \textit{2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)} (pp. 161-165).
+
+\bibitem{sakoe1978}
+Sakoe, H., \& Chiba, S. (1978). Dynamic programming algorithm optimization for spoken word recognition. \textit{IEEE transactions on acoustics, speech, and signal processing}, 26(1), 43-49.
+
+\bibitem{dixon2005}
+Dixon, S. (2005). An empirical comparison of tempo trackers. In \textit{Proceedings of the 8th Brazilian Symposium on Computer Music}.
+
+\bibitem{goto2004}
+Goto, M. (2004). Development of the RWC music database. In \textit{Proceedings of the 18th International Congress on Acoustics} (pp. 553-556).
+
+\bibitem{bock2019}
+Böck, S., Korzeniowski, F., Schlüter, J., Krebs, F., \& Widmer, G. (2016). madmom: a new Python audio and music signal processing library. In \textit{Proceedings of the 24th ACM international conference on Multimedia} (pp. 1174-1178).
+
+\end{thebibliography}
+
+\end{document}

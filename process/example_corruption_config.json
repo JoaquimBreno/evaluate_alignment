@@ -1,0 +1,71 @@
+{
+  "corruptions": [
+    {
+      "type": "linear_shift",
+      "parameters": {
+        "shift_ticks": 50
+      },
+      "description": "Constant delay of 50 ticks throughout the file"
+    },
+    {
+      "type": "linear_shift",
+      "parameters": {
+        "shift_ticks": -30
+      },
+      "description": "Constant advance of 30 ticks throughout the file"
+    },
+    {
+      "type": "progressive_shift",
+      "parameters": {
+        "start_shift": 0,
+        "end_shift": 100
+      },
+      "description": "Progressive delay from 0 to 100 ticks"
+    },
+    {
+      "type": "progressive_shift",
+      "parameters": {
+        "start_shift": 50,
+        "end_shift": -50
+      },
+      "description": "Shift from +50 to -50 ticks (delay to advance)"
+    },
+    {
+      "type": "section_shifts",
+      "parameters": {
+        "shifts": [
+          [0, 1000, 50],
+          [1000, 2500, -20],
+          [2500, 999999, 30]
+        ]
+      },
+      "description": "Different shifts for different sections: +50 (0-1000), -20 (1000-2500), +30 (rest)"
+    },
+    {
+      "type": "section_shifts",
+      "parameters": {
+        "shifts": [
+          [0, 500, 25],
+          [1500, 3000, 40]
+        ]
+      },
+      "description": "Shift beginning (+25) and middle section (+40)"
+    },
+    {
+      "type": "random_jitter",
+      "parameters": {
+        "max_jitter": 25,
+        "seed": 42
+      },
+      "description": "Random jitter up to ±25 ticks with reproducible seed"
+    },
+    {
+      "type": "random_jitter",
+      "parameters": {
+        "max_jitter": 50,
+        "seed": 123
+      },
+      "description": "Higher random jitter up to ±50 ticks"
+    }
+  ]
+}
