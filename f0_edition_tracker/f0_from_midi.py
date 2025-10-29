@@ -1,17 +1,18 @@
 import pretty_midi
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
 import os
 
-def extract_f0_from_midi(midi_file, output_file=None, method="melody", track_idx=None, 
+def extract_f0_from_midi(midi_file, output_csv_path=None, method="melody", track_idx=None, 
                          time_resolution=0.01, plot=False):
     """
-    Extract F0 (fundamental frequency) from MIDI file using different methods.
+    Extract F0 (fundamental frequency) from MIDI file using different methods and save as CSV.
     
     Parameters:
         midi_file (str): Path to the MIDI file
-        output_file (str): Path to save the F0 data (optional)
+        output_csv_path (str): Path to save the F0 CSV file (optional)
         method (str): Method to extract F0:
             - "lowest": Always use the lowest note as F0
             - "melody": Try to extract the melody line (highest non-percussion in melody range)
@@ -83,10 +84,18 @@ def extract_f0_from_midi(midi_file, output_file=None, method="melody", track_idx
                 highest_note = max(active_notes, key=lambda note: note.pitch)
                 f0[i] = pretty_midi.note_number_to_hz(highest_note.pitch)
     
-    # Save F0 data if output file is specified
-    if output_file:
-        np.save(output_file, {"times": times, "f0": f0})
-        print(f"F0 data saved to {output_file}")
+    # Create DataFrame for CSV output
+    df = pd.DataFrame({
+        'time': times,
+        'f0': f0
+    })
+    
+    # Save to CSV
+    if output_csv_path is None:
+        output_csv_path = os.path.splitext(midi_file)[0] + "_f0.csv"
+    
+    df.to_csv(output_csv_path, index=False)
+    print(f"F0 data saved to: {output_csv_path}")
     
     # Plot F0 contour if requested
     if plot:
@@ -101,8 +110,8 @@ def extract_f0_from_midi(midi_file, output_file=None, method="melody", track_idx
         for midi_note in range(36, 96, 12):  # C2 to C7, octave steps
             freq = pretty_midi.note_number_to_hz(midi_note)
             plt.axhline(y=freq, color='r', linestyle='--', alpha=0.3)
-            plt.text(0, freq, f"{pretty_midi.note_number_to_name(midi_note)}", 
-                    fontsize=8, ha='left', va='bottom')
+            note_name = pretty_midi.note_number_to_name(midi_note)
+            plt.text(0, freq, f"{note_name}", fontsize=8, ha='left', va='bottom')
         
         plt.show()
     

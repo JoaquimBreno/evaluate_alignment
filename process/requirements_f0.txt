@@ -1,0 +1,17 @@
+pandas
+tqdm
+pretty_midi
+librosa
+torch
+torchfcpe
+matplotlib
+numpy
+
+
+
+
+
+
+
+
+

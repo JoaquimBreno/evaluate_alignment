@@ -118,15 +118,20 @@ def visualize_alignment(midi_file, audio_file, midi_times, aligned_times, path, 
     # Cria a figura com subplots
     fig = plt.figure(figsize=(15, 12))
     
-    # Plot da matriz de custo e do caminho DTW
+    # Plot da matriz de custo e do caminho DTW (otimizado)
     ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=2)
-    librosa.display.specshow(cost_matrix.T, x_axis='time', y_axis='time',
-                           cmap='viridis')
-    plt.colorbar(format='%+2.0f')
-    plt.title('Matriz de Custo e Caminho DTW')
     
-    # Plota o caminho DTW
-    plt.plot(path[:, 0], path[:, 1], 'r-', linewidth=1)
+    # Reduz a resolução para visualização mais rápida
+    downsample_factor = max(1, max(cost_matrix.shape) // 1000)  # Máximo 1000x1000
+    cost_matrix_viz = cost_matrix[::downsample_factor, ::downsample_factor]
+    path_viz = path[::max(1, len(path) // 2000)]  # Máximo 2000 pontos no caminho
+    
+    librosa.display.specshow(cost_matrix_viz.T, cmap='viridis')
+    plt.colorbar(format='%+2.0f')
+    plt.title('Matriz de Custo e Caminho DTW (Downsampled)')
+    
+    # Plota o caminho DTW reduzido
+    plt.plot(path_viz[:, 0] / downsample_factor, path_viz[:, 1] / downsample_factor, 'r-', linewidth=1)
     
     # Plot do chroma do MIDI
     ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=2)
@@ -152,7 +157,13 @@ def visualize_alignment(midi_file, audio_file, midi_times, aligned_times, path, 
     plt.grid(True)
     
     plt.tight_layout()
-    plt.show()
+    
+    # Salva a imagem em vez de mostrar
+    midi_name = Path(midi_file).stem
+    save_path = f"alignment_{midi_name}.png"
+    plt.savefig(save_path, dpi=150, bbox_inches='tight')
+    print(f"💾 Visualização salva em: {save_path}")
+    plt.close()  # Fecha a figura para liberar memória
 
 def align_midi_tokens_to_cqt(midi_file, midi_tokens, cqt_file, audio_file, output_file=None):
     """

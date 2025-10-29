@@ -1,0 +1,10 @@
+=== RESUMO DA ANÁLISE DE ALINHAMENTO ===
+
+❌ Nenhuma métrica mostrou diferença significativa
+
+=== RECOMENDAÇÕES ===
+
+🏆 Melhores métricas para detectar desalinhamento:
+1. normalized_edit_distance (effect size: 0.1467)
+2. temporal_overlap (effect size: 0.0372)
+3. dtw_distance (effect size: 0.0131)
